@@ -1,8 +1,12 @@
 @import url(./index.css);
 
+a.logo {
+  cursor: pointer;
+}
+
 body {
   margin-inline: auto;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   background-color: #0d0d15;
   color: #f8f7ff;
   font-size: 14px;
@@ -18,7 +22,6 @@ body {
   position: relative;
   background-color: #1d1c28;
   min-height: 375px;
-  padding: 2.5%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -47,6 +50,7 @@ body {
   background-position: center;
   background-size: cover;
   width: 100%;
+  left: 0px;
   height: 177px;
   position: absolute;
   bottom: 0;
@@ -57,8 +61,9 @@ body {
   font-size: 52px;
   font-weight: 400;
   letter-spacing: -0.5px;
-  font-family: Bakbak One;
-  margin-bottom: 20px;
+  line-height: 62px;
+  font-family: "Bakbak One", Arial, Helvetica, sans-serif;
+  margin: 20px 0px;
 }
 
 .blog-page_breadcrumbs {
@@ -66,7 +71,9 @@ body {
   display: flex;
   align-items: center;
   font-size: 14px;
+  line-height: 20px;
   font-weight: 600;
+  gap: 24px;
 }
 .blog-page_breadcrumbs:last-child {
   color: #e7eef7a8;
@@ -74,7 +81,6 @@ body {
 .blog-page_link {
   color: #f8f7ff;
   text-decoration: none;
-  margin-right: 24px;
 }
 .blog-page_link:hover {
   border-bottom: 2px solid #0265dc;
@@ -88,7 +94,6 @@ body {
   width: 2px;
   height: 16px;
   background: #d0d7fb2b;
-  border-radius: 2px;
 }
 .blog-page_breadcrumbs::after {
   content: "";
@@ -98,21 +103,19 @@ body {
   width: 2px;
   height: 16px;
   background: #d0d7fb2b;
-  border-radius: 2px;
 }
 /* --------------------------------------------Main-- */
 .ourblog-info__block {
-  margin-inline: auto;
-  max-width: 1728px;
   display: flex;
   justify-content: center;
-  padding: 64px;
+  padding: 64px 15px;
   gap: 32px;
 }
 .aside {
   font-size: 14px;
   font-weight: 600;
   flex-basis: 328px;
+  gap: 21px;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -120,8 +123,8 @@ body {
   background-color: #1d1c28;
   display: flex;
   flex-direction: column;
-  position: relative;
   padding: 24px;
+  line-height: 32px;
   margin-bottom: 21px;
 }
 
@@ -131,25 +134,24 @@ body {
   gap: 16px;
 }
 .list-two {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 8px;
 }
 .list-two a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  display: block;
   color: #f8f7ff;
   border: 2px solid rgba(208, 215, 251, 0.17);
-  padding: 6px 12px;
+  padding: 0px 12px;
 }
 
 .side-bar_header {
   color: #f8f7ff;
   font-size: 24px;
+  line-height: 32px;
   font-weight: 400;
-  font-family: Bakbak One;
+  font-family: "Bakbak One", Arial, Helvetica, sans-serif;
   margin-bottom: 22px;
   padding-bottom: 10px;
   border-bottom: 1px solid #bfc5ee1f;
@@ -162,25 +164,20 @@ body {
 
 /* --------------------------------------------- */
 .ourblog-details__block {
-  max-width: 1024px;
+  max-width: 920px;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-.content_text_link {
-  color: #78bbfa;
-}
+
 .ourblog-details__block h2 {
   color: #f8f7ff;
   font-size: 36px;
   font-weight: 400;
-  font-family: Bakbak One;
+  font-family: "Bakbak One", Arial, Helvetica, sans-serif;
 }
 .ourblog-details__block p {
-  color: #f8f7ff;
   font-size: 18px;
-  font-weight: 400;
-  font-family: Poppins;
   line-height: 28px;
 }
 
@@ -191,7 +188,8 @@ body {
   color: #f8f7ff;
   font-size: 28px;
   font-weight: 400;
-  font-family: Bakbak One;
+  line-height: 36px;
+  font-family: "Bakbak One", Arial, Helvetica, sans-serif;
 }
 
 .ourblog-details__block figcaption {
@@ -199,6 +197,9 @@ body {
   bottom: 12px;
   position: absolute;
   color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }
 .ourblog-details__block figure {
   position: relative;
@@ -207,60 +208,52 @@ body {
 }
 
 .gaming-button {
- 
   width: min-content;
-  gap: 8px;
   color: #f8f7ff;
-  
   font-size: 18px;
   font-weight: 600;
-  background-color: #0265dc;
   padding: 10px 24px;
 }
 
 .blog-content_list {
-  list-style: none;
+  list-style: disc;
   padding-left: 10px;
-  position: relative;
 }
-.content_item::before {
-  content: "•";
-  position: absolute;
-  left: -15px;
-  color: #f8f7ff;
-  font-size: 20px;
-  line-height: 1.5;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.blog-logo__text{
+.blog-logo__text {
+  line-height: 28px;
   margin-bottom: 8px;
 }
-
-.blog-logo__text::before {
+.blog-label__list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 8px;
+}
+.blog-label__list::before {
   content: "";
+
   display: inline-block;
-  width: 21px; 
-  height: 23px; 
+  top: 50%;
+  left: 0px;
+  width: 21px;
+  height: 23px;
   margin-right: 8px;
-  background-image: url('./img/Logo/logo.svg'); 
+  background-image: url("./img/Logo/logo.svg");
   background-size: cover;
   vertical-align: middle;
 }
 /* ---------------------------------------Blockquote */
 
 .blog__blockquote {
-  max-width: max-content;
   background-color: #002754;
   border-radius: 10px;
   padding: 16px;
-  gap: 8px;
 }
 .blog__blockquote--text {
   color: #f8f7ff;
-
   font-size: 24px;
+  line-height: 30px;
   font-weight: 600;
-  font-family: Poppins;
 }
 .blog__blockquote-rating {
   gap: 8px;
@@ -276,11 +269,6 @@ body {
   position: relative;
 }
 
-.foto-two {
-  max-width: 100%;
-  height: auto;
-}
-
 .foto_box figure figcaption {
   left: 21px;
   bottom: 12px;
@@ -293,16 +281,22 @@ body {
   justify-content: space-between;
   gap: 12px;
 }
-.ourblog-details_footer{
+
+.socials__box {
+  display: flex;
+  align-items: center;
+}
+.socials__box span,
+.tags_box span {
+  font-style: 400 16px/24px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  margin-right: 16px;
   color: #f5f8fb;
 }
 
-.socials__box,
 .tags_box {
   display: flex;
-
   align-items: center;
-  gap: 16px;
 }
 .socials_list,
 .tags_list {
@@ -312,9 +306,7 @@ body {
 }
 .tag-link,
 .socials_link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   gap: 8px;
   color: #f8f7ff;
   font-size: 14px;
@@ -347,4 +339,3 @@ body {
   background: #bfc5ee1f;
   border: 2px solid #3892f3;
 }
-
