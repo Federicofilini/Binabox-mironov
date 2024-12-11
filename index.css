@@ -1,22 +1,18 @@
 @import url(./reset.css);
 @import url(./blog.css);
 
-@font-face {
-  font-family: Bakbak One;
-  src: url(./fonts/BakbakOne-Regular.ttf);
-}
-@font-face {
-  font-family: Poppins;
-  src: url(./fonts/Poppins-Regular.ttf);
-}
-
 body {
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   background-color: #0d0d15;
   color: #f8f7ff;
   font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }
 .is-blue {
   background-color: #0265dc;
@@ -27,19 +23,25 @@ body {
 .header {
   max-width: 1728px;
   margin-inline: auto;
+
   padding: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.logo_webr {
+  background: transparent;
+}
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Bakbak One, Arial, Helvetica, sans-serif;
+  font-family: "Bakbak One", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 32px;
   gap: 16px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .header__bar__list {
@@ -53,6 +55,7 @@ body {
 
 .header_nav_link {
   color: #ffff;
+  line-height: 24px;
   text-decoration: none;
   transition: 1sec;
 }
@@ -70,7 +73,7 @@ body {
   content: "";
   position: absolute;
   top: 13px;
-  left: 270px;
+  left: 260px;
   width: 2px;
   height: 24px;
   background: #d0d7fb2b;
@@ -81,19 +84,17 @@ body {
   display: flex;
   align-items: center;
   border: 1px solid rgba(208, 215, 251, 0.17);
-  padding: 4px;
+
   margin-right: 16px;
 }
 
 .search-btn {
-  width: 40px;
-  height: 40px;
   padding: 10px;
   background-color: transparent;
   cursor: pointer;
 }
 .search-input {
-  padding: 5px 5px;
+  padding: 5px;
   outline: none;
   border: none;
   color: #e7eee7;
@@ -160,7 +161,7 @@ main {
     rgb(13, 13, 21);
   z-index: 1;
   margin-bottom: 20px;
-  font-family: Poppins, Arial, Verdana, sans-serif;
+  font-family: "Poppins", Arial, Verdana, sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
@@ -171,7 +172,7 @@ main {
 
 .promo__header {
   width: 100%;
-  font-family: Bakbak One, Arial, Verdana, sans-serif;
+  font-family: "Bakbak One", Arial, Verdana, sans-serif;
   font-size: 52px;
   font-weight: 400;
   line-height: 62px;
@@ -194,7 +195,7 @@ main {
   margin-bottom: 32px;
 }
 .promo__number {
-  font-family: Bakbak One, Arial, Verdana, sans-serif;
+  font-family: "Bakbak One", Arial, Verdana, sans-serif;
   font-size: 44px;
   line-height: 56px;
   text-shadow: 0px 5px 13px #ffffff42;
@@ -258,6 +259,7 @@ main {
 
 .catalog-logo {
   display: flex;
+  align-items: center;
   gap: 8px;
   font-size: 24px;
   font-weight: 400;
@@ -353,7 +355,7 @@ main {
 .card__price {
   font-size: 36px;
   font-weight: 400;
-  font-family: Bakbak One, Arial, Verdana, sans-serif;
+  font-family: "Bakbak One", Arial, Verdana, sans-serif;
   color: #f5f8fb;
   margin-bottom: 20px;
 }
@@ -376,8 +378,9 @@ main {
 .blog-header {
   text-align: center;
   font-size: 36px;
+  line-height: 62px;
   font-weight: 400;
-  font-family: Bakbak One, Arial, Verdana, sans-serif;
+  font-family: "Bakbak One", Arial, Verdana, sans-serif;
   color: #fff;
   margin-bottom: 120px;
   letter-spacing: -0.5px;
@@ -433,7 +436,7 @@ main {
   display: block;
   font-size: 36px;
   font-weight: 400;
-  font-family: Bakbak One, Arial, Verdana, sans-serif;
+  font-family: "Bakbak One", Arial, Verdana, sans-serif;
   color: #f5f8fb;
   letter-spacing: -0.5px;
 }
@@ -482,8 +485,9 @@ main {
 .about_header {
   text-align: center;
   font-size: 36px;
+  line-height: 62px;
   font-weight: 400;
-  font-family: Bakbak One, Arial, Verdana, sans-serif;
+  font-family: "Bakbak One", Arial, Verdana, sans-serif;
   color: #f5f8fb;
   margin-bottom: 20px;
   letter-spacing: -0.5px;
@@ -543,7 +547,7 @@ main {
   position: relative;
   font-size: 24px;
   font-weight: 400;
-  font-family: Bakbak One, Arial, Verdana, sans-serif;
+  font-family: "Bakbak One", Arial, Verdana, sans-serif;
   color: #f5f8fb;
   margin-bottom: 15px;
 }
@@ -563,8 +567,9 @@ main {
 .our-team_header {
   text-align: center;
   font-size: 36px;
+  line-height: 62px;
   font-weight: 400;
-  font-family: Bakbak One, Arial, Verdana, sans-serif;
+  font-family: "Bakbak One", Arial, Verdana, sans-serif;
   color: #fff;
   margin-bottom: 20px;
   letter-spacing: -0.5px;
@@ -578,7 +583,6 @@ main {
   margin-bottom: 64px;
 }
 .team-card {
-  width: min-content;
   height: auto;
   background-color: #1d1c28;
   padding: 32px;
@@ -596,7 +600,7 @@ main {
   display: block;
   font-size: 24px;
   font-weight: 400;
-  font-family: Bakbak One, Arial, Verdana, sans-serif;
+  font-family: "Bakbak One", Arial, Verdana, sans-serif;
   color: #f5f8fb;
   margin-bottom: 10px;
   letter-spacing: -0.5px;
@@ -621,8 +625,9 @@ main {
 .faqs_header {
   text-align: center;
   font-size: 36px;
+  line-height: 62px;
   font-weight: 400;
-  font-family: Bakbak One, Arial, Verdana, sans-serif;
+  font-family: "Bakbak One", Arial, Verdana, sans-serif;
   color: #f5f8fb;
   margin-bottom: 40px;
   letter-spacing: -0.5px;
@@ -693,7 +698,7 @@ main {
   gap: 12px;
   font-size: 32px;
   font-weight: 400;
-  font-family: Bakbak One, Arial, Verdana, sans-serif;
+  font-family: "Bakbak One", Arial, Verdana, sans-serif;
   color: #0265dc;
   margin-bottom: 10px;
 }
