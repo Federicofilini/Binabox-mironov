@@ -91,7 +91,7 @@
       <nav class="nav__header__bar">
         <ul class="header__bar__list">
           <li class="list__item__bar">
-            <a href="" class="header_nav_link">Home</a>
+            <a href="" class="header_nav_link" aria-current="page">Home</a>
           </li>
           <li class="list__item__bar">
             <a href="./blog.html" class="header_nav_link">Blog</a>
@@ -106,11 +106,11 @@
       </nav>
 
       <div class="search_box">
-        <div class="search__field">
-          <button class="search-btn">
+        <form class="search__field">
+          <button class="search-btn" type="submit">
             <svg
-              width="18"
-              height="18"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@
             </svg>
           </button>
           <input type="search" class="search-input" placeholder="Search" />
-        </div>
+        </form>
         <!-- --------------------------------- -->
 
         <div class="discord-link-box">

@@ -7,11 +7,12 @@
 .header-nav-info_list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 64px 0px;
   gap: 16px;
 }
 .header-nav-info_linc {
-  width: 328px;
+  min-width:328px;
   display: flex;
   align-items: center;
   border: 2px solid rgba(208, 215, 251, 0.17);
@@ -19,7 +20,7 @@
   padding: 40px 32px;
   gap: 24px;
   color: #f8f7ff;
-  font-family: Bakbak One;
+  font-family: "Bakbak One", Arial, Helvetica, sans-serif;
   font-size: 36px;
   font-weight: 400;
 }
@@ -32,7 +33,7 @@
 
 .header-nav-info_linc p {
   color: #eff5fad1;
-  font-family: Poppins;
+  font-family: " Poppins", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -43,7 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Bakbak One;
+  font-family: "Bakbak One", Arial, Helvetica, sans-serif;
   margin-bottom: 100px;
 }
 .contact-us_main input {
@@ -75,12 +76,13 @@
   justify-content: space-between;
   background-color: #1d1c28;
   color: #f5f8fb;
-  font-family: Poppins;
+  font-family: " Poppins", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   padding: 24px;
+  box-sizing: border-box;
 }
-small,
+
 legend {
   display: none;
 }
@@ -133,7 +135,6 @@ legend {
 }
 
 .input-stile {
-  width: 100%;
   height: 40px;
   border: 2px solid rgba(208, 215, 251, 0.17);
   background-color: #0d0d15;
@@ -149,12 +150,13 @@ legend {
 
   outline: none;
 }
-/* .input-stile:invalid {
-  border: 2px solid  #EA3829
-} */
+.input-stile:user-invalid {
+  border: 2px solid #ea3829;
+}
 
 .form_input-box textarea {
   background-color: #0d0d15;
+  resize: none;
   border: 2px solid rgba(208, 215, 251, 0.17);
   color: #f5f8fb;
   padding: 10px;
@@ -168,11 +170,15 @@ legend {
 .form_input-box textarea:hover {
   border: 2px solid #3892f3;
   outline: none;
+  
+}
+.form_input-box textarea:user-invalid {
+  border: 2px solid #ea3829;
 }
 
-.form_input-box p {
+label {
   color: #f5f8fb;
-  font-family: Poppins;
+  font-family: " Poppins", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -184,25 +190,19 @@ legend {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  color: #f5f8fb;
   gap: 8px;
 }
-.is-none {
-  display: none;
-}
+
 .radio-label {
   display: flex;
   align-items: center;
   cursor: pointer;
   gap: 5px;
   color: #f5f8fb;
-  font-family: Poppins;
+  font-family: " Poppins", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-}
-.radio-input:hover + .radio-label::before {
-  border: 2px solid #d4d9f242;
 }
 
 .radio-label::before {
@@ -216,10 +216,18 @@ legend {
   background-color: black;
   box-sizing: border-box;
 }
-
+.radio-input:hover + .radio-label::before {
+  border: 2px solid #d4d9f242;
+}
 .radio-input:checked + .radio-label::before {
   border: 5px solid #0265dc;
 }
+
+
+
+
+
+
 
 /* ---------------------------------------------- */
 
@@ -266,13 +274,13 @@ legend {
 
 .form_footer-block p {
   color: #f5f8fb;
-  font-family: Poppins;
+  font-family: " Poppins", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
 .form_footer-block a {
-  font-family: Poppins;
+  font-family: " Poppins", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -287,7 +295,7 @@ legend {
   flex-direction: row-reverse;
   gap: 8px;
   color: #f5f8fb;
-  font-family: Poppins;
+  font-family: " Poppins", Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 600;
 
