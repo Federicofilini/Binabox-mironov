@@ -30,7 +30,6 @@ body {
   position: relative;
   background-color: #1d1c28;
   margin-bottom: 21px;
-  
 }
 .aside_summary {
   list-style: none;
@@ -50,24 +49,25 @@ body {
   height: 24px;
   background-image: url(./img/Symbols/plus.svg);
 }
+
+.aside_details[open] .aside_summary::after {
+  background-image: url(./img/Symbols/minus.svg);
+}
+
 .aside_checkbox-aria {
   border-top: 1px solid #bfc5ee1f;
   padding: 16px 24px 24px;
 }
-.aside_checkbox-aria p{
+.aside_checkbox-aria p {
   margin-left: 28px;
   margin-bottom: 8px;
-  
 }
 .aside_checkbox-aria div {
   position: relative;
-  
 }
 /* -------------------------------------------input buttoms */
 .aside_input-button {
   display: none;
-
-  
 }
 .aside-castom_cheackbox {
   position: absolute;
@@ -83,16 +83,15 @@ body {
   transition: all 0.3s ease;
 }
 .aside_input-button:checked + .aside-castom_cheackbox {
-  background: #0265dc url('./img/Symbols/Cheack-white.svg') no-repeat center/60%;
+  background: #0265dc url("./img/Symbols/Cheack-white.svg") no-repeat center/60%;
   border: none;
   box-sizing: border-box;
 }
 .aside-castom_cheackbox:hover {
-  border:1px solid #1d1c28;
- 
+  border: 1px solid #1d1c28;
 }
-.aside-castom_cheackbox-bol{ 
-box-sizing: border-box;
+.aside-castom_cheackbox-bol {
+  box-sizing: border-box;
   position: absolute;
   top: 11px;
   left: 0px;
@@ -103,15 +102,13 @@ box-sizing: border-box;
   background: #0d0d15;
   cursor: pointer;
   transition: all 0.2s ease;
-  
 }
 .aside_input-button:checked + .aside-castom_cheackbox-bol {
   box-sizing: border-box;
-  border:5px solid #0265dc;
+  border: 5px solid #0265dc;
 }
 
 /* -------------------------------------------- */
-
 
 .apply-btn {
   min-width: 320px;
@@ -139,37 +136,78 @@ box-sizing: border-box;
   font-size: 36px;
   line-height: 48px;
   font-family: "Bakbak One", Arial, Helvetica, sans-serif;
-  margin-right: 411px;
+  margin-right: 300px;
 }
-.sort-by_buttom {
-  position: relative;
+/* .dropdown-form p {
   text-align: start;
-  min-width: 160px;
   color: #f5f8fb;
-  background-color: #0d0d15;
-  font-size: 18px;
   font-weight: 600;
-  padding: 0px 24px 0px;
-  cursor: pointer;
+  font-size: 18px;
+  line-height: 28px;
+} */
+
+
+.sort-by_form {
+  
+  display: flex;
+  flex-direction: column;
+  
 }
-.sort-by_buttom::after {
-  opacity: 0;
+
+
+.sort-by_select {
+  opacity: 0; 
+  pointer-events: none;
+  transition: opacity 0.3s;
+  width: 165px; 
+  color: #f5f8fb;
+  appearance: none; 
+  overflow: hidden; 
+  padding: 4px 12px;
+  background-color: #1d1c28;
+  border: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+.sort-by_select:focus {
+  opacity: 1;
+  pointer-events: auto;
+ 
+}
+.label-for-sort-by{
+  display: block;
+  position: relative;
+  padding: 10px 56px 10px 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height:28px;
+}
+.label-for-sort-by:focus-within {
+  border: 1px solid #0265dc;
+}
+.label-for-sort-by::after {
   visibility: hidden;
   content: "";
   position: absolute;
+  top: 12px;
+  right: 24px;
   width: 24px;
   height: 24px;
-  top: 10px;
-  right: 25px;
   background-image: url(./img/Symbols/chevron-up.svg);
-  transition: visibility 1s, opacity 1s;
+  background-size: contain;
+  pointer-events: none;
+  color: #f5f8fb;
+  
 }
-.catalog_search__field {
-  display: flex;
-  align-items: center;
-  border: 1px solid rgba(208, 215, 251, 0.17);
+.sort-by_select:focus + .label-for-sort-by::after{
+  visibility: visible;
 }
-.sort-by_drop-box {
+
+
+
+
+
+
+/* .sort-by_drop-box {
   visibility: hidden;
   position: absolute;
   min-width: 160px;
@@ -205,8 +243,12 @@ box-sizing: border-box;
 .drop_item:hover {
   text-decoration: underline;
   text-decoration-color: rgba(208, 215, 251, 0.66);
+} */
+.catalog_search__field {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(208, 215, 251, 0.17);
 }
-
 .tag-filter_box {
   display: flex;
   background-color: #1d1c28;
