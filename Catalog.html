@@ -87,12 +87,14 @@
         </div>
       </header>
       <!-------------------------------------------------------------------Cataloge -->
+      
+
       <section class="blog_section">
         <div class="header-nav_block">
           <h1 class="blog_header">Explore catalog</h1>
           <ul class="blog-page_breadcrumbs">
-            <li><a class="blog-page_link" href="./index.html">Home</a></li>
-            <li>Catalog</li>
+            <li class="breadcrumbs_item" ><a class="blog-page_link" href="/index.html">Home</a></li>
+            <li >Catalog</li>
           </ul>
         </div>
       </section>
@@ -479,24 +481,18 @@
             </ul>
           </div> -->
 
-            <form class="sort-by_form">
-              <label class="label-for-sort-by" for="sort">Sort by</label>
-              <select id="sort" name="sort" class="sort-by_select">
-                <option class="sort-by_option" value="Newest">Newest</option>
-                <option class="sort-by_option" value="Most popular">
-                  Most popular
-                </option>
-                <option
-                  class="sort-by_option"
-                  value="Increasing in price"
-                  selected
-                >
-                  Increasing in price
-                </option>
-                <option class="sort-by_option" value="Lowering the price">
-                  Lowering the price
-                </option>
-              </select>
+            <form class="catalog-list">
+              <label for="sort">
+                <select name="filter" id="sort" form="filter-form" required>
+                  <option disabled value="" selected>Sort by</option>
+                  <option value="newest">Newest</option>
+                  <option value="popular">Most popular</option>
+                  <option value="increasing in price">
+                    Increasing in price
+                  </option>
+                  <option value="lowering the price">Lowering the price</option>
+                </select>
+              </label>
             </form>
 
             <div class="catalog_search__field">
@@ -526,11 +522,13 @@
               />
             </div>
           </div>
-          <div class="tag-filter_box">
+
+          <!-- --------------------------------Filter -->
+          <div class="tag-filter_button-box">
             <ul class="tag-filter_box_list">
               <li class="filter_box_item">
-                <a href="" class="side-bar_link">NFT </a>
-                <button class="filter-item-close_btn">
+                <button type="button" class="side-bar_btn">
+                  NFT
                   <svg
                     width="16"
                     height="16"
@@ -549,8 +547,8 @@
                 </button>
               </li>
               <li class="filter_box_item">
-                <a href="" class="side-bar_link">ICO </a>
-                <button class="filter-item-close_btn">
+                <button type="button" class="side-bar_btn">
+                  ICO
                   <svg
                     width="16"
                     height="16"
@@ -570,8 +568,8 @@
               </li>
 
               <li class="filter_box_item">
-                <a href="" class="side-bar_link">Crypto</a>
-                <button class="filter-item-close_btn">
+                <button type="button" class="side-bar_btn">
+                  Crypto
                   <svg
                     width="16"
                     height="16"
@@ -590,7 +588,7 @@
                 </button>
               </li>
             </ul>
-            <button class="clear-all-btn">Clear all</button>
+            <button class="clear-all-btn" type="reset">Clear all</button>
           </div>
           <!-- ------------------------------------------------------Grid section -->
           <section class="catalog_grid_section">
