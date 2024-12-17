@@ -102,7 +102,9 @@ body {
   height: 24px;
   background: #d0d7fb2b;
 }
-
+.breadcrumbs_item:last-child::after {
+  display: none;
+}
 
 /* --------------------------------------------Main-- */
 .ourblog-info__block {

@@ -12,7 +12,7 @@
   gap: 16px;
 }
 .header-nav-info_linc {
-  min-width:328px;
+  min-width: 328px;
   display: flex;
   align-items: center;
   border: 2px solid rgba(208, 215, 251, 0.17);
@@ -47,8 +47,9 @@
   font-family: "Bakbak One", Arial, Helvetica, sans-serif;
   margin-bottom: 100px;
 }
+
 .contact-us_main input {
-  width: 100%;
+  width: 640px;
 }
 .form-header {
   color: #f8f7ff;
@@ -170,7 +171,6 @@ legend {
 .form_input-box textarea:hover {
   border: 2px solid #3892f3;
   outline: none;
-  
 }
 .form_input-box textarea:user-invalid {
   border: 2px solid #ea3829;
@@ -223,26 +223,21 @@ label {
   border: 5px solid #0265dc;
 }
 
-
-
-.is-none{
+.is-none {
   display: none;
 }
 
-
-
 /* ---------------------------------------------- */
-
 
 .security-policyaside_checkbox-aria {
   padding-left: 25px;
   position: relative;
 }
-.security-policyaside_checkbox-aria p{
+.security-policyaside_checkbox-aria p {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  font-family: "Poppins",Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 .security-policy_input-button {
   display: none;
